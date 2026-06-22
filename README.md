@@ -44,7 +44,7 @@ archivos y ejecutar el script deseado.
 Para la Parte 2:
 
 ```
-python parte2_descriptiva.py
+python parte2.py
 ```
 
 Para la Parte 3:
@@ -55,6 +55,35 @@ python parte3_inferencia.py
 
 Ambos scripts leen automáticamente el archivo `muestra_2000.csv` ubicado en la misma
 carpeta, por lo que no es necesario realizar ninguna configuración adicional.
+
+## Pasos adicionales (Windows)
+
+Recomendado para reproducibilidad en Windows — crea y activa un entorno virtual, luego
+instala las dependencias desde `requirements.txt` (incluido en este repo):
+
+```powershell
+python -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy RemoteSigned
+& .\.venv\Scripts\Activate.ps1
+pip install -r requirements.txt
+```
+
+Si está ejecutando en un servidor o en CI sin interfaz gráfica, fije el backend de Matplotlib
+antes de correr el script para evitar bloqueos:
+
+```powershell
+$env:MPLBACKEND='Agg'
+python parte2.py
+```
+
+## Notas
+
+- El README original mencionaba `parte2_descriptiva.py`; el archivo real en este repositorio
+  es `parte2.py` (ya corregido arriba).
+- Los gráficos generados por los scripts se guardan en la misma carpeta: `destino_barras.png`,
+  `destino_torta.png`, `gasto_histograma.png`, `gasto_cajas.png`.
+- Para instalar las dependencias sin activar un venv, puede usar el comando mostrado en la
+  sección "Requisitos previos", pero usar un venv es la práctica recomendada.
 
 ## Resultados esperados
 
