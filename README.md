@@ -15,13 +15,13 @@ previos de programación.
 - Joaquín Arzuaga
 - Diego Renaldín
 - Sebastián Martony
-- [completar: nombre del cuarto integrante]
+- Felipe Ruiz
 
 ## Contenido de la carpeta
 
 - `muestra_2000.csv` – muestra de 2000 registros seleccionados al azar del archivo
   original de turismo emisivo (generada en la Parte 1).
-- `parte2_descriptiva.py` – tabla de frecuencias y gráficos correspondientes a la Parte 2.
+- `parte2.py` – tabla de frecuencias y gráficos correspondientes a la Parte 2.
 - `parte3_inferencia.py` – intervalos de confianza, tests de hipótesis y regresión lineal
   correspondientes a la Parte 3.
 - Las tablas e imágenes generadas por los scripts se guardan en esta misma carpeta.
@@ -44,7 +44,7 @@ archivos y ejecutar el script deseado.
 Para la Parte 2:
 
 ```
-python parte2_descriptiva.py
+python parte2.py
 ```
 
 Para la Parte 3:
